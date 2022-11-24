@@ -1,0 +1,55 @@
+<div class="content">
+
+
+  <h2 mat-dialog-title>Login</h2>
+
+
+<div mat-dialog-content>
+    <form [formGroup] = "loginForm">
+
+      
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="email" matInput placeholder="Enter Your Email Id" >
+      </mat-form-field>
+  
+  
+
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+  
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="role">
+          <mat-option value="Admin">Admin</mat-option>
+          <mat-option value="Customer">Customer</mat-option>
+          <mat-option value="Washer">Washer</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+    </form>
+
+</div>
+
+
+<div>
+    <div mat-dialog-action [align]="'end'">
+        <button mat-raised-button color="primary">New to us..Signup Now</button>
+        <button style="margin-left: 8px;" mat-raised-button color="warn" mat-dialog-close>Close</button>
+        <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="login()" mat-dialog-close>Login</button>
+    </div>
+</div>
+
+
+
+
+
+
+

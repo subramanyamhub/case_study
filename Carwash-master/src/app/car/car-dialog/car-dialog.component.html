@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Add Car</h1>
+<div mat-dialog-content>
+    <form [formGroup] = "carForm">
+
+
+        <mat-form-field appearance="outline">
+            <mat-label>Car Name</mat-label>
+            <input formControlName="name" matInput placeholder="Car Name">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Car Model</mat-label>
+            <input formControlName="model" matInput placeholder="Car Model">
+          </mat-form-field>
+
+
+          <mat-form-field appearance="outline" >
+            <mat-label>Select Status</mat-label>
+            <mat-select formControlName="status">
+              <mat-option value="Active">Active</mat-option>
+              <mat-option value="Inactive">Inactive</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+         
+
+
+    </form>
+</div>
+
+
+
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color = "warn" mat-dialog-close>Close</button>
+    <button style="margin-left:10px;" mat-raised-button color = "primary" (click) = "addCar()">{{actionBtn}}</button>
+
+</div>

@@ -1,0 +1,37 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .headerButton{
+    margin-left: 10px;
+  }
+
+  
+  table {
+    width: 100%;
+  }
+
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .headerButton{
+    margin-left: 10px;
+  }
+
+  .Toolbar::after{
+    opacity: 0.5;
+  }
+  .page{
+    background-image: url('https://i.pinimg.com/originals/92/94/1d/92941d986586249ee79a24065f68c910.jpg');
+    background-size: 120%;
+    height: 100%;
+    width: 100%;
+  }

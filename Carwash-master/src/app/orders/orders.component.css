@@ -1,0 +1,15 @@
+mat-form-field{
+    width:100%;
+}
+
+
+.content {
+    max-width: 100%;
+    margin: auto;
+  }
+
+
+  .card{
+    position: absolute;
+
+  }

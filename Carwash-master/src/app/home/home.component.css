@@ -1,0 +1,165 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.headerButton{
+  margin-left: 10px;
+}
+
+
+.banner{
+  /*background-image: url('https://www.freepik.com/free-photos-vectors/car-wash-banner');*/
+  background-image: url('../../assets/home.jpeg');
+  text-align: center;
+  background-position: top center;
+  height: 700px;
+  background-size: cover;
+  font-weight: bold;
+  opacity: 1;
+  overflow: hidden;
+  
+}
+.page {
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  height: 100%;
+  background-blend-mode: soft-light;
+ }
+
+.xyz h1{
+  font-size: 65px;
+  color: white;
+  font-weight: bold;
+  opacity: 1;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-bottom: 70px;
+  padding-top: 25px;
+ }
+
+
+.xyz p{
+  font-size: 22px;
+  color: white;
+  font-weight: lighter;
+  font-family: cursive;
+  opacity: 1;
+  display:flex;
+  justify-content: center;
+  padding-bottom: 25px;
+
+}
+
+.abc{
+  padding: 50px 0;
+  border-top: 1px solid #FFFFFF;
+  background-image: linear-gradient(rgb(5, 77, 95), rgb(41, 8, 119));
+  color: whitesmoke;
+}
+.button {
+  border-radius: 5px;
+  background-color: rgb(57, 194, 57);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.button:hover{
+  opacity: 1;
+  background-color: green;
+}
+
+.button:hover span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:hover span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  /* right: -20px; */
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/*Choose Section*/
+.page2{
+  background-image: url('https://img.freepik.com/free-photo/blue-abstract-gradient-wave-wallpaper_53876-108364.jpg?w=1060&t=st=1659462137~exp=1659462737~hmac=f20dae3f00e1b73db4624a6ccd0ae380f5dd15a5d809e2cebfd9c44b6aa8f270');
+  background-size: 100%;
+}
+
+
+.choose{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  /* background-image: url('https://static.vecteezy.com/system/resources/previews/001/987/642/non_2x/abstract-diagonal-light-grey-silver-background-technology-concept-free-vector.jpg'); */
+  background-size: 100%;
+}
+
+.choose h1{
+  font-size: 40px;
+}
+
+.card {
+  flex:1 1 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  height: 250px;
+  margin: 30px;
+  text-align: center;
+  font-family: arial;
+  padding: 30px;
+  opacity: .85;
+  transition: 0.5s ease;
+  border-radius: 15px;
+  background-color: rgb(217, 233, 245);
+}
+
+.card h2{
+  font-size: 27px;
+  font-weight: bold;
+  font-family:'Courier New', Courier, monospace;
+}
+.card p{
+font-size: 16px;
+}
+
+.card:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 0.5s ease;
+  box-shadow: 0 20px 25px rgba(10, 1, 16, 0.4);
+}
+
+.choosebody .row{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background-image: url('https://calibercarwash.com/wp-content/uploads/2022/02/IMG_7040.jpg'); */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-image: url('../../assets/choose.jpg'); */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}

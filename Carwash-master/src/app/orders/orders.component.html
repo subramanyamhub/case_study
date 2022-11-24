@@ -1,0 +1,108 @@
+<div class="content">
+
+
+    <h1 mat-dialog-title><b>Order</b></h1>
+  
+  
+  <div mat-dialog-content>
+
+
+    <form [formGroup] = "orderForm">
+
+  
+
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Package Name</mat-label>
+          <input matInput disabled value={{name}}>
+        </mat-form-field>
+
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Package Description</mat-label>
+        <input matInput disabled value={{description}}>
+      </mat-form-field>
+      <br>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Package Price</mat-label>
+        <input matInput disabled value={{price}}>
+      </mat-form-field>
+      <br>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Car Registration Number</mat-label>
+        <input formControlName="regNumber" matInput placeholder="">
+      </mat-form-field>
+      <br>
+
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="" formControlName="address"></textarea>
+      </mat-form-field>
+      <br>
+
+  
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>City</mat-label>
+        <input formControlName="city" matInput placeholder="">
+      </mat-form-field>
+      <br>
+
+     <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>State</mat-label>
+        <input formControlName="state" matInput placeholder="">
+      </mat-form-field>
+      <br>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Postal Code</mat-label>
+        <input matInput formControlName="pincode" value="">
+      </mat-form-field>
+
+      <br>
+
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Wash Instructions</mat-label>
+        <textarea formControlName="instructions" matInput placeholder=""></textarea>
+      </mat-form-field>
+      <br>
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>Choose Wash Date</mat-label>
+        <input matInput formControlName="date" [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <br>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label> Order Status -- The Order has to accepted by ouw Washer</mat-label>
+        <input matInput disabled value={{status}}>
+      </mat-form-field>
+
+  </form>
+
+
+
+  </div>
+  
+  
+  <div>
+      <div mat-dialog-action [align]="'end'">
+          <button mat-raised-button color="primary" (click)="ViewPackages()" mat-dialog-close>Change Package</button>
+          <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="placeOrder()">Place Order</button>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  

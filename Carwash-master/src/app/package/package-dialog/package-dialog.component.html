@@ -1,0 +1,49 @@
+
+
+<h1 mat-dialog-title>Package Form</h1>
+<div mat-dialog-content>
+
+  
+    <form [formGroup] = "productForm">
+
+
+        <mat-form-field appearance="outline">
+            <mat-label>Package Name</mat-label>
+            <input formControlName="name" matInput placeholder="Package Name">
+          </mat-form-field>
+    
+    
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Description</mat-label>
+            <textarea formControlName="description" matInput placeholder="Describe the package"></textarea>
+          </mat-form-field>
+
+
+          <mat-form-field appearance="outline">
+            <mat-label>Price</mat-label>
+            <input formControlName="price" matInput type = "number" placeholder="Price">
+          </mat-form-field>
+
+
+          <mat-form-field appearance="outline" >
+            <mat-label>Select Status</mat-label>
+            <mat-select formControlName="status">
+              <mat-option value="Active">Active</mat-option>
+              <mat-option value="Inactive">Inactive</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+         
+
+
+    </form>
+</div>
+
+
+
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color = "warn" mat-dialog-close>Close</button>
+    <button style="margin-left:10px;" mat-raised-button color = "primary" (click) = "addPackage()">{{actionBtn}}</button>
+
+</div>

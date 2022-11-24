@@ -1,0 +1,162 @@
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .headerButton{
+    margin-left: 10px;
+  }
+
+  .rowdo1{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+     }
+
+  .rowdo2{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+  /*
+  .rowdo{
+    background-image: url('https://i.pinimg.com/originals/92/94/1d/92941d986586249ee79a24065f68c910.jpg');
+    background-size: 120%;
+ 
+  }*/
+
+  .page{
+    background-image: url('https://i.pinimg.com/originals/92/94/1d/92941d986586249ee79a24065f68c910.jpg');
+    background-size: 120%;
+  }
+
+  /*
+  .card {
+    flex:1 1 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 250px;
+    margin: 30px;
+    text-align: center;
+    font-family: arial;
+    padding: 30px;
+    opacity: .85;
+    transition: 0.5s ease;
+    border-radius: 15px;
+}*/
+
+
+
+.carddo {
+    flex:1 1 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height: 250px;
+    margin: 30px;
+    text-align: center;
+    font-family: arial;
+    /* padding: 30px; */
+    opacity: .75;
+    transition: 0.5s ease;
+    border-radius: 15px;
+    background-color: rgb(44, 42, 40);
+    color: white;
+}
+
+.icon{
+    margin-top: 20px;
+}
+
+.cardbody{
+  margin-top: 15px;
+    padding: 5px 20px 19px 20px;
+}
+
+.cardbody h2{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background-color: rgb(74, 159, 234);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 5px; */
+    opacity: 1;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 10px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover{
+    opacity: 1;
+    background-color:  rgb(212, 65, 94);
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    opacity: 1;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+ 
+/* .carddo button {
+    border: none;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    background-color: rgb(95, 166, 241);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  } */
+  
+  /* .carddo button:hover {
+    opacity: 0.7;
+  } */
+
+  .admin h1{
+    padding: 12px;
+    text-align: center;
+    text-shadow: 2px 2px rgb(87, 87, 231);
+    font-size:50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+
+
+
+

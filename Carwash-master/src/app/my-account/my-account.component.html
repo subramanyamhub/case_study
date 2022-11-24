@@ -1,0 +1,87 @@
+
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Green Car Wash : Your Profile</span>
+    <span class="example-spacer"></span>
+
+        <mat-icon style="margin-right:0px;" (click)="back()">arrow_back_ios 
+            
+        </mat-icon>
+  
+        <button mat-flat-button color="primary" style="font-size:20px" (click)="back()"> Back 
+        </button>
+
+    <button mat-raised-button color="warn" style="margin-left: 40px;" class="headerButton" (click)="logOut()">Logout</button>
+    
+  </mat-toolbar>
+
+
+  <div class="row">
+    <div class="profile-nav col-md-3">
+        <div class="panel">
+            <div class="user-heading round">
+                <a href="#">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+                </a>
+                <h1>Car Wash</h1>
+                <p>carwash@gmail.com</p>
+            </div>
+            <div>
+            <ul class="col-md-9">
+                <li><a href="#"> <i class="fa fa-user"></i> Profile</a></li>
+                <li><a href="#"> <i class="fa fa-calendar"></i> Recent Activity <span class="label label-warning pull-right r-activity">9</span></a></li>
+                <li><a href="#"> <i class="fa fa-edit"></i> Edit profile</a></li>
+                <li><a href="#"> <i class="bi bi-file-earmark-check"></i> Compleat order details</a></li>
+                <li><a href="#"> <i class="fa-solid fa-memo-circle-info"></i> pending order</a></li>
+                <li><a href="#"> <i class="fa-thin fa-file-arrow-down"></i> Order Managemant</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <div class="profile-info col-md-9">
+        <div class="panel">
+        </div>
+        <div class="panel">
+            <div class="bio-graph-heading">
+                WASHER PROFILE
+            </div>
+            <div class="panel-body bio-graph-info">
+                <h1>Bio Graph</h1>
+                <div class="row">
+                    <div class="bio-row">
+                        <p><span>First Name </span>: Car</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span>Last Name </span>: Wash</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span>Country </span>: india</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span>DOB</span>: 7 sep 2001</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span>Role </span>: washer</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span>Email </span>: us@gmail.com</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span>Mobile </span>: +91 1234567890</p>
+                    </div>
+                    <div class="bio-row">
+                        <p><span>Experience </span>: 15 months</p>
+                    </div>
+                    <div class="bio-row">
+                      <p><span>Joined date </span>: 1/12/2020</p>
+                  </div>
+                  <div class="bio-row">
+                      <p><span>rating </span>: 3.0/5</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,62 @@
+<div class="content">
+
+
+    
+    <h2 mat-dialog-title>New Washer Registration</h2>
+<div mat-dialog-content>
+
+
+  <form [formGroup]="signupForm">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input formControlName="userName" matInput placeholder="Enter Your Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Address</mat-label>
+      <input formControlName="userAddress" matInput placeholder="Enter Washer's Address">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Telephone</mat-label>
+      <span matPrefix>+91 &nbsp;</span>
+      <input formControlName="userPhnumber" type="tel" matInput placeholder="555-555-1234">
+    </mat-form-field>
+
+
+
+
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input  formControlName="userEmail" matInput placeholder="Enter Washer's Email Id">
+    </mat-form-field>
+
+
+
+    <mat-form-field appearance="outline">
+      <mat-label>Enter your password</mat-label>
+      <input formControlName="userPassword" matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+
+  </form>
+</div>
+
+
+<div>
+    <div mat-dialog-action [align]="'end'">
+        
+        <button style="margin-left: 8px;" mat-raised-button color="warn" mat-dialog-close>Close</button>
+        <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="signUp()" mat-dialog-close>Register Washer</button>
+    </div>
+</div>
+
+
+
+</div>
+
+
